@@ -1,2 +1,8 @@
-import React from 'react';
-export default function CardWrapper({children, className = '', ...props}) {return <section className={`panel ${className}`} {...props}>{children}</section>;}
+import React from "react";
+export default function CardWrapper({ children, className = "", ...props }) {
+  return (
+    <section className={`panel ${className}`} {...props}>
+      {children}
+    </section>
+  );
+}

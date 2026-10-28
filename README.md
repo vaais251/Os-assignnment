@@ -2,7 +2,11 @@
 
 Web Engineering / Frontend Development, Assignment 01, Section B (CLO1 and CLO2).
 
-**Live application:** https://vaais251.github.io/Os-assignnment/
+**GitHub Pages address:** https://vaais251.github.io/Os-assignnment/
+
+**Published address reported by GitHub:** http://vaais.me/Os-assignnment/
+
+GitHub Pages inherits the account's existing custom domain. Deployment succeeded on 28 October 2026, but the custom-domain address timed out during verification. The local application passed browser checks. Domain access must be restored before relying on the public link for grading.
 
 **Repository:** https://github.com/vaais251/Os-assignnment
 
@@ -53,7 +57,8 @@ src/
   context/
     ThemeContext.jsx
   hooks/
-    usePersistentTasks.js
+      usePersistentTasks.js
+      createId.js
   App.jsx
   main.jsx
   styles.css
@@ -61,23 +66,23 @@ src/
 
 ## Requirement mapping
 
-| Assignment concept | Implementation |
-| --- | --- |
-| Functional components and callback props | App supplies data and stable handlers to TaskForm, TaskList and TaskCard. |
-| React children | CardWrapper renders its children inside a reusable panel. |
-| Class state | ActivityLogger uses this.state and this.setState. |
-| componentDidMount | Restores validated saved activity entries. |
-| componentDidUpdate | Observes new event IDs, updates logs, saves them and shows a timed notification. |
-| componentWillUnmount | Clears the notification timer. |
-| JSX expressions and conditions | Counts, percentages, ternary empty states and && priority indicators. |
-| map and unique keys | Tasks use UUIDs; events use UUIDs; fixed option lists use their unique text. |
-| Synthetic events | onSubmit, onChange and onClick in forms, filters and task controls. |
-| useState | Tasks, filters, form fields, theme and event state. |
-| useEffect | Storage synchronization, document title and initial input focus. |
-| useContext | ThemeToggle reads ThemeContext without prop drilling. |
-| useRef | TaskForm focuses its input on mount and after successful submission. |
-| useMemo | Computes filtered task collections only when dependencies change. |
-| useCallback and memo | Stabilize task callbacks and skip unchanged TaskCard renders. |
+| Assignment concept                       | Implementation                                                                   |
+| ---------------------------------------- | -------------------------------------------------------------------------------- |
+| Functional components and callback props | App supplies data and stable handlers to TaskForm, TaskList and TaskCard.        |
+| React children                           | CardWrapper renders its children inside a reusable panel.                        |
+| Class state                              | ActivityLogger uses this.state and this.setState.                                |
+| componentDidMount                        | Restores validated saved activity entries.                                       |
+| componentDidUpdate                       | Observes new event IDs, updates logs, saves them and shows a timed notification. |
+| componentWillUnmount                     | Clears the notification timer.                                                   |
+| JSX expressions and conditions           | Counts, percentages, ternary empty states and && priority indicators.            |
+| map and unique keys                      | Tasks use UUIDs; events use UUIDs; fixed option lists use their unique text.     |
+| Synthetic events                         | onSubmit, onChange and onClick in forms, filters and task controls.              |
+| useState                                 | Tasks, filters, form fields, theme and event state.                              |
+| useEffect                                | Storage synchronization, document title and initial input focus.                 |
+| useContext                               | ThemeToggle reads ThemeContext without prop drilling.                            |
+| useRef                                   | TaskForm focuses its input on mount and after successful submission.             |
+| useMemo                                  | Computes filtered task collections only when dependencies change.                |
+| useCallback and memo                     | Stabilize task callbacks and skip unchanged TaskCard renders.                    |
 
 ## Deployment and submission
 
